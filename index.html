@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <ink  rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class= "text-center header">
+   <h1> Weather-Dashboard</h1>
+</header>
+<main class="container-fluid">
+    <div calss=" row">
+        <aside class="col-3">
+                <form id="city-form">
+                    <div class="mb-3">
+                        <label for="city-search">Search for a city:</label><br />
+                        <input type="text" class="form-input" id="city-search" name="city-search"
+                            placeholder="Enter city"><br />
+                        <button class="btn btn-info" id="search-button">Search</button>
+    </div>
+    </form>
+    <div class="col" id="searchHistory">
+        </div>
+        </aside>
+
+        <section class="col-9">
+            <div class="border">
+                <h2 id="current-date"></h2>
+                <div class="column" id="current-weather">
+        
+                </div>
+                <h2>5-Day Forecast</h2>
+                <div class="row" id="fiveDay">
+        
+                </div>
+            </div>
+        </section>
+        </div>
+   
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
