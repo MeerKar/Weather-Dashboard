@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather-Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <ink  rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header class= "text-center header">
-   <h1> Weather-Dashboard</h1>
-</header>
-<main class="container-fluid">
-    <div calss=" row">
-        <aside class="col-3">
+    <header class="text-center header">
+        <h1>Weather-Dashboard</h1>
+    </header>
+    <main class="container">
+        <div class="weather-input">
+            <h3></h3>
+        </div>
+
+        <div class="row d-flex flex-row">
+            <section class="col-3">
                 <form id="city-form">
                     <div class="mb-3">
-                        <label for="city-search">Search for a city:</label><br />
+                        <label for="city-search">Enter a City:</label><br />
                         <input type="text" class="form-input" id="city-search" name="city-search"
-                            placeholder="Enter city"><br />
-                        <button class="btn btn-info" id="search-button">Search</button>
-    </div>
-    </form>
-    <div class="col" id="searchHistory">
-        </div>
-        </aside>
-
-        <section class="col-9">
-            <div class="border">
-                <h2 id="current-date"></h2>
-                <div class="column" id="current-weather">
-        
+                            placeholder="E.g, New York , San Fransico, London"><br />
+                        <button class="search-btn" id="search-button">Search for the City</button>
+                        <div class="separator"></div>
+                    </div>
+                </form>
+                <div class="col" id="searchHistory">
+                   
                 </div>
-                <h2>5-Day Forecast</h2>
-                <div class="row" id="fiveDay">
-        
+            </section>
+
+            <section class="col-9">
+                <div class="border">
+                    <h2 id="current-date"></h2>
+                    <div class="column" id="current-weather">
+                        
+                    </div>
+                    <h2>5-Day Forecast</h2>
+                    <div class="row" id="fiveDay">
+                        
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
-   
-</main>
+    </main>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-
-
-<script src="./assets/js/script.js"></script>
+    
 </body>
+
 </html>
