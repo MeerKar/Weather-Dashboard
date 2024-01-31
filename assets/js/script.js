@@ -1,5 +1,3 @@
-const APIKey = "c7ae8f207746098d578e7c3839236330";
-
 var searchCity = $("#city-search");
 var searchButton = $("#search-button");
 var currentWeather = $("#current-weather");
