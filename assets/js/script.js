@@ -12,7 +12,6 @@ const apiKey = "c7ae8f207746098d578e7c3839236330";
 
 // Current Date and time
 $(document).ready(function () {
-  // To display current time and day
   var displayTime = document.querySelector("#current-weather");
   console.log("displayTime:", displayTime);
   var currentTime = dayjs().format("dddd, MMMM D, YYYY");
@@ -72,8 +71,6 @@ function getFiveDayForecast(cityName) {
 
       var fiveDayArray = data.list;
 
-      // Looping  through the forecast array
-
       // Looping through the forecast array
       for (var i = 0; i < fiveDayArray.length; i += 8) {
         var currentForecastIndex = fiveDayArray[i];
@@ -81,7 +78,6 @@ function getFiveDayForecast(cityName) {
           "DD/MM/YYYY"
         );
 
-        // Set the weather icon using weatherIconUrl
         var weatherIconUrl =
           "https://openweathermap.org/img/wn/" +
           currentForecastIndex.weather[0].icon +
@@ -123,7 +119,6 @@ function renderSearch() {
 // function for Search history
 function setToHistory(search) {
   if (search.trim() === "") {
-    // If the search is empty, do not add to history
     return;
   }
 
@@ -138,7 +133,7 @@ function setToHistory(search) {
   renderSearch();
 }
 
-// get the search from local storage for rendering to recent search
+// get the search from local storage for rendering recent search
 function getHistory() {
   var history = localStorage.getItem("cities");
   if (history) {
@@ -155,7 +150,7 @@ function searchCitySubmit(currentCity) {
   setToHistory(currentCity);
 }
 
-//Click Event: Type City, Click Search, Function to log API search results
+//Click Event:
 searchButton.on("click", function (event) {
   event.preventDefault();
   var currentCity = searchCity.val();
@@ -169,5 +164,5 @@ searchContainer.on("click", ".history-btn", function (event) {
   searchCitySubmit(savedCity);
 });
 
-// Call the getHistory function
+// Call the  function
 getHistory();
