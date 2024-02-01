@@ -30,7 +30,7 @@ My website will give the city name, the date, an icon representation of weather 
 and the future weather conditions that city
 Then it gives a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 and when  clicked on a city in the search history
-THEN  again presented with current and future conditions for that city
+Then again presented with current and future conditions for that city
 
 The 5 day was solved by looping through the each item in the array ,which was showing every 3 hours - 3 hours x 40 items in the array is 120 total hours.  120 divided by 24 hours is 5 days. 
 For the weather icon was solved byt giving the correct url and the specifications
@@ -42,4 +42,4 @@ For the weather icon was solved byt giving the correct url and the specification
 
 
 
-Deployed URL: 
+Deployed URL: https://meerkar.github.io/Weather-Dashboard/
