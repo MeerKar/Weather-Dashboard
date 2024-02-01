@@ -38,7 +38,8 @@ For the weather icon was solved byt giving the correct url and the specification
 
 ## Mock-Up
 
-<img width="1653" alt="image" src="https://github.com/MeerKar/Weather-Dashboard/assets/116701851/2d2a86a2-0701-4d57-b687-0530184a9430">
+<img width="1511" alt="image" src="https://github.com/MeerKar/Weather-Dashboard/assets/116701851/3397e953-edb1-45f8-ab9c-5b34f3406cb7">
+
 
 
 
