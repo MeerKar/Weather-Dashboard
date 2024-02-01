@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-    background-color: #3498db;
+    background-color: #007bff;
     color: #fff;
     padding: 10px;
 }
@@ -37,9 +37,10 @@ body {
 .search-btn {
     background-color:#007bff;
     color: #fff;
-    padding: 10px;
+    padding: 8px;
     border: none;
     cursor: pointer;
+    width: 100%;
 }
 
 .separator {
@@ -47,12 +48,20 @@ body {
     background-color: #ddd;
     margin: 10px 0;
 }
+
+.weather-input .separator{
+    height:1px;
+    width: 100%;
+    margin:25px 0;
+    background: #bbbb;
+}
+
 #searchHistory button {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-    padding: 5px;
-    background-color: grey;
+    padding: 8px;
+    background-color:#6C757D;;
     color: white;
     border: none;
     cursor: pointer;
@@ -82,7 +91,7 @@ body {
     border: 1px solid #ccc;
     width: 18%;
     border-radius: 8px;
-    background-color: gray;
+    background-color:#6C757D;
    margin-right:10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    

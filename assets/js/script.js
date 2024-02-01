@@ -31,7 +31,7 @@ function getApi(cityName) {
       currentWeather.empty();
       currentWeather.append(`<h2>${data.name}</h2>`);
 
-      var weatherIconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+      var weatherIconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
       $("#weatherIconToday").attr("src", weatherIconUrl);
 
       currentWeather.append(
@@ -77,11 +77,10 @@ function getFiveDayForecast(cityName) {
         );
 
         var weatherIconUrl =
-          "https://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/w/" +
           currentForecastIndex.weather[0].icon +
-          "@2x.png";
+          ".png";
         $("#weatherIconDay" + i).attr("src", weatherIconUrl);
-
         var cardHtml = `
     <div class="card forecast-item">
       <div class="card-body">
