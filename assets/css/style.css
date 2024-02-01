@@ -1,13 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: small;
     font-weight: bolder;
 }
+
 body {
     background: #E3F2FD;
     font-size: medium;
@@ -21,7 +22,10 @@ body {
 }
 
 .container {
-    margin-top: 20px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .weather-input {
@@ -35,7 +39,7 @@ body {
 }
 
 .search-btn {
-    background-color:#007bff;
+    background-color: #007bff;
     color: #fff;
     padding: 8px;
     border: none;
@@ -45,15 +49,16 @@ body {
 
 .separator {
     height: 1px;
-    background-color: #ddd;
+    background-color: #000;
     margin: 10px 0;
 }
 
-.weather-input .separator{
-    height:1px;
+.weather-input .separator {
+    height: 1px;
     width: 100%;
-    margin:25px 0;
-    background: #bbbb;
+    margin: 25px 0;
+    background: #000;
+    
 }
 
 #searchHistory button {
@@ -61,60 +66,61 @@ body {
     display: block;
     width: 100%;
     padding: 8px;
-    background-color:#6C757D;;
+    background-color: #6C757D;
     color: white;
     border: none;
     cursor: pointer;
 }
+
 .border {
     border: 1px solid #ddd;
-    padding: 20px;
+   padding: 20px;
     border-radius: 8px;
 }
 
-#current-weather {
+.border h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
     margin-bottom: 20px;
+    /* background-color: #6C757D; */
+
+}
+
+#current-weather {
+    margin-bottom: 10px;
 }
 
 #fiveDay {
     margin-top: 20px;
-   
 }
 
- .forecast-item {
+.forecast-item {
     margin-bottom: 40px;
     padding-left: 15px;
+}
 
-  
-}   
 .card {
     border: 1px solid #ccc;
     width: 18%;
     border-radius: 8px;
-    background-color:#6C757D;
-   margin-right:10px;
+    background-color: #6C757D;
+    margin-right: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
 }
 
 .card-body {
     padding-right: 5px;
-    
-
 }
-
-
 
 .card-title {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    
 }
 
 .card-text {
     margin-bottom: 5px;
-    
 }
+
 .card img {
     max-width: 100%;
     height: auto;

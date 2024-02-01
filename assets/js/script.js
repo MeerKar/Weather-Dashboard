@@ -10,11 +10,11 @@ const apiKey = "c7ae8f207746098d578e7c3839236330";
 
 // Current Date and time
 $(document).ready(function () {
-  var displayTime = document.querySelector("#current-weather");
-  console.log("displayTime:", displayTime);
-  var currentTime = dayjs().format("dddd, MMMM D, YYYY");
-  console.log("currentTime:", currentTime);
-  displayTime.textContent = currentTime;
+  var displayDate = document.querySelector("#current-weather");
+  console.log("displayDate:", displayDate);
+  var currentDay = dayjs().format("dddd, MMMM D, YYYY");
+  console.log("currentDate:", currentDate);
+  displayTime.textContent = currentDate;
 });
 
 function getApi(cityName) {
